@@ -74,7 +74,7 @@ export default function Home() {
       <div className='grid md:grid-cols-[380px_1fr] gap-8 items-start'>
         <Card>
           <CardHeader>
-            <CardTitle className='text-lg'>Repositories for "{username}"</CardTitle>
+            <CardTitle className='text-lg'>Repositories for &quot;{username}&quot;</CardTitle>
           </CardHeader>
           <CardContent>
             <RepoList username={username} selectedRepo={selectedRepo} onSelectRepo={(repoName) => dispatch(setSelectedRepo(repoName))} />
